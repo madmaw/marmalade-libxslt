@@ -1,0 +1,32 @@
+#!/usr/bin/env mkb
+options
+{
+	s3e-data-dir="marmalade/test"
+}
+
+packages
+{
+}
+
+subprojects
+{
+	# include as a subproject to get the header files
+	libxslt
+	libxml2
+} 
+
+files
+{
+	xsltproc/xsltproc.c
+	(marmalade/test)
+	test.xsl
+	test.xml
+
+}
+
+assets
+{
+	(marmalade/test)
+	test.xsl
+	test.xml
+}

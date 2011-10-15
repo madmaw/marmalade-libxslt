@@ -1,0 +1,62 @@
+includepath header
+
+library 
+{
+	".,libxslt"
+}
+
+includepaths
+{
+	.
+	marmalade
+}
+
+defines
+{
+
+}
+
+undefines
+{
+	WITH_MODULES
+	EXSLT_CRYPTO_ENABLED
+}
+
+files
+{
+	(libxslt)
+	["common/libxslt"]
+	attributes.h
+	documents.h
+	extensions.h
+	extra.h
+	functions.h
+	imports.h
+	keys.h
+	libxslt.h
+	namespaces.h
+	numbersInternals.h
+	pattern.h
+	preproc.h
+	security.h
+	templates.h
+	transform.h
+	trio.h
+	triodef.h
+	variables.h
+	xslt.h
+	xsltexports.h
+	xsltInternals.h
+	xsltlocale.h
+	xsltutils.h
+	["common/libexslt"]
+	(libexslt)
+	exslt.h
+	exsltexports.h
+	libexslt.h
+	(marmalade)
+	["marmalade/libxslt"]
+	libxslt/xsltconfig.h
+	["marmalade/libexslt"]
+	libexslt/exsltconfig.h
+}
